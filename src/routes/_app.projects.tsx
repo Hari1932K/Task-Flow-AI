@@ -1,0 +1,7 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { ProjectsPage } from "@/components/pages/ProjectsPage";
+
+export const Route = createFileRoute("/_app/projects")({
+  component: ProjectsPage,
+  head: () => ({ meta: [{ title: "Projects · TaskFlow AI" }] }),
+});
